@@ -92,7 +92,7 @@ I did this in lines # through # in my code in `my_other_file.py`
 
 I implemented this step in cell of "draw detected lane lines on all test images" in the notebook.  Here are my result based on the test image:
 
-![alt text][image6.png]
+![alt text](image6.png)
 ---
 
 ### Pipeline (video)
