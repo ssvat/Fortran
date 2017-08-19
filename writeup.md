@@ -104,4 +104,4 @@ I implemented this step in lines # through # in my code in `yet_another_file.py`
 
 ### Discussion
 
-The pipeline might fail in the bigger turn in the challenge video  how I might improve it if I were going to pursue this project further. I can discard a bad frame or apply smoothing/averging or look-ahead (or hight pass, low pass) filter methods to improve the prediction if I were going to pursue this project.  
+The pipeline fails in the continus, sharp turn in the mountain in the harder-challenge video. The detected lines are cross to the line in the opposite direction or neighboring mortorcycle. If I were going to pursue this project, I would discard a bad frame (with erroneous curvature), or apply smoothing/averging or look-ahead (or hight pass, low pass) filter methods to improve the prediction.  
