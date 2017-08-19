@@ -33,20 +33,20 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![Undistorted image](image1.png)
+![Undistorted image](image0.png)
 
 ### Pipeline (single images)
 
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![Undistorted image](image2.png)
+![Undistorted image](image1.png)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
 I used a combination of color and gradient thresholds to generate a binary image in the IPython notebook.  Here's an example of my output for this step. 
 
-![Binary output](image3.png)
+![Binary output](image2.png)
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -76,13 +76,13 @@ This resulted in the following source and destination points:
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-![alt text](image4.png)
+![alt text](image3.png)
 
 #### 4. Identifying lane-line pixels to fit their positions with a polynomial
 
 The cell of "# Create an image to draw on and an image to show the selection window" is to fit my lane lines with a 2nd order polynomial, shown below:
 
-![alt text](image5.png)
+![alt text](image4.png)
 
 #### 5. Radius of curvature of the lane and the position of the vehicle with respect to center.
 
