@@ -78,17 +78,17 @@ I verified that my perspective transform was working as expected by drawing the 
 
 ![alt text][image4]
 
-#### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
+#### 4. Identifying lane-line pixels to fit their positions with a polynomial
 
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+The cell of "# Create an image to draw on and an image to show the selection window" is to fit my lane lines with a 2nd order polynomial, shown below:
 
 ![alt text][image5]
 
-#### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
+#### 5. Radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in lines # through # in my code in `my_other_file.py`
+I did this in the cell of "Measuring Curvature" which has a function called measure_radius_of_curvature and then I can compute the offset from the center. 
 
-#### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+#### 6. My result plotted back down onto the road such that the lane area is identified clearly.
 
 I implemented this step in cell of "draw detected lane lines on all test images" in the notebook.  Here are my result based on the test image:
 
