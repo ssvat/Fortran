@@ -20,3 +20,9 @@ The goals / steps of this project are the following:
 The images for camera calibration are stored in the folder called `camera_cal`.  
 The images in `test_images` are for testing my pipeline on single frames.  
 
+This project includes: 
+* writeup
+* main (Jupyter notebook)
+* example output images (image0, image1, image2, image3, image4, image5, image6 png files)
+* output video (project_video_output.mp4)
+
