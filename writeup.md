@@ -37,14 +37,14 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 ### Pipeline (single images)
 
-#### 1. Provide an example of a distortion-corrected image.
+#### 1. Distortion-correction.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
 ![Undistorted image](image1.png)
 
-#### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
+#### 2. Creating a thresholded binary image.
 
-I used a combination of color and gradient thresholds to generate a binary image in the IPython notebook.  Here's an example of my output for this step. 
+I used a combination of color and gradient thresholds to generate a binary image in the IPython notebook.  Here's an example of my output for this step. The final binary image is a combination of binary thresholding the S channel (HLS) and binary thresholding the result of applying the Sobel operator in the x direction on the original image.
 
 ![Binary output](image2.png)
 
