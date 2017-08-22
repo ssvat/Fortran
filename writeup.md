@@ -92,7 +92,7 @@ I did this in the cell of "Measuring Curvature" which has a function called meas
 
 I implemented this step in cell of "draw detected lane lines on all test images" in the notebook.  Here are my result based on the test image (the curvature and deviation shown on the images):
 
-![alt text](image6.png)
+![alt text](image5.png)
 ---
 
 ### Pipeline (video)
