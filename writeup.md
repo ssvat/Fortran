@@ -96,7 +96,10 @@ I implemented this step in cell of "draw detected lane lines on all test images"
 ---
 
 ### Strategy
-The previous pipeline fails to predict the corrected lane lines in some frames. The new pipeline is starting form cell called "# Corrected image processing pipeline". After several methods are tested, My strategy is as follows:
+The previous pipeline fails to predict the corrected lane lines in some frames. 
+![alt text](image6.png)
+
+The new pipeline is starting form cell called "# Corrected image processing pipeline". After several methods are tested, My strategy is as follows:
 When there is large deviation between the current and previous frame, several sanity checks (especially for windows) are done; bad current frame is discarded and characteristics from the previous frame are used.
 
 #### Here's a [link to my video result](./project_video_out_final.mp4).
