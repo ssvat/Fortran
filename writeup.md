@@ -95,12 +95,14 @@ I implemented this step in cell of "draw detected lane lines on all test images"
 ![alt text](image5.png)
 ---
 
-### Pipeline (video)
+### Strategy
+The previous pipeline fails to predict the corrected lane lines in some frames. The new pipeline is starting form cell called "# Corrected image processing pipeline". After several methods are tested, My strategy is as follows:
+When there is large deviation between the current and previous frame, several sanity checks (especially for windows) are done; bad current frame is discarded and characteristics from the previous frame are used.
 
-#### Here's a [link to my video result](./project_video.mp4).
+#### Here's a [link to my video result](./project_video_out_final.mp4).
 
 ---
 
 ### Discussion
 
-The pipeline fails in the continus, sharp turn in the mountain in the harder-challenge video. The detected lines are cross to the line in the opposite direction or neighboring mortorcycle. If I were going to pursue this project, I would discard a bad frame (with erroneous curvature), or apply smoothing/averging or look-ahead (or hight pass, low pass) filter methods to improve the prediction.  
+The pipeline fails in the continus, sharp turn in the mountain in the harder-challenge video. The detected lines are cross to the line in the opposite direction or neighboring mortorcycle. If I were going to pursue this project, I would apply smoothing/averging or look-ahead (or hight pass, low pass) filter methods to improve the prediction.  
